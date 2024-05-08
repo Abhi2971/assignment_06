@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playlist</title>
+    <link rel="stylesheet" href="ass_06.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">Video Playlist</h1>
+    </header>
+    <main>
+        <section id="container">
+            <div class="box1">
+                <button align="center" onclick="playVideo('v1')">first video</button>
+                <button align="center" onclick="playVideo('v2')">second video</button>
+                <button align="center" onclick="playVideo('v3')">third video</button>
+                <button align="center" onclick="playPreviousVideo()">Previous</button>
+                <button align="center" onclick="playNextVideo()">Next</button> 
+            </div>
+            <div class="box2">
+                <iframe id="v1" width="100%" height="300" style="display: none;" src="https://www.youtube.com/embed/c1IOQnTNuWM?si=WXbwbuC9AT6eqAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    
+                </iframe>
+                <iframe id="v2" width="100%" height="300" style ="display:none;" src="https://www.youtube.com/embed/msx9_JvZ7Ig?si=-H6Q8ap9HtSEcdQf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
+                <iframe id="v3" width="100%" height="300" style ="display:none;" src="https://www.youtube.com/embed/xNas-mCGQPQ?si=uZh2olQkJqmdY9NH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Video Playlist</p>
+    </footer>
+    <script src="a1.js"></script>
+</body>
+</html>
